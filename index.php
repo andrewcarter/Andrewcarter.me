@@ -1,30 +1,19 @@
 <?php require_once('conf/config.php') ?>
-<?
-/*** EVERYBODY FUNCTIONS ***/
 
-// Curl helper function
-function curl_get($url)
-{
-	$curl = curl_init($url);
-	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-	curl_setopt($curl, CURLOPT_TIMEOUT, 30);
-	$return = curl_exec($curl);
-	curl_close($curl);
-	return $return;
-}
-
-?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 	"http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>Chris Marsh</title>
-	<meta http-equiv="Content-category" content="text/html; charset=ISO-8859-1" />
-	<link href="css/splash.css" rel="stylesheet" category="text/css" />
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" /> 
-	<link rel="SHORTCUT ICON" href="/favicon.ico" />
-	
-	<script type="text/javascript" src="js/switches.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="css/splash.css" rel="stylesheet"/>
+    <!-- CSS for GitHub Badge Widget: implied media="all" -->
+	<link rel="stylesheet" href="js/jquery.github_badge.css?v=1" />
+    
+    	<script type="text/javascript" src="js/switches.js"></script>
+        
+      
+
 
     
 	<script type="text/javascript">
@@ -32,10 +21,19 @@ function curl_get($url)
 		var section ="";
 	</script>
 
+	<style>
+            #sample_user_badge
+			{
+                float: left;
+                margin: 50px;
+                width: 350px;
+				display:inline;
+            }
+        </style>
 </head>
 
 <body>
-
+	<div id="sample_user_badge"></div>
 
 	<div id="header">
 		<h1>
@@ -47,11 +45,12 @@ function curl_get($url)
         <ol>
             <li><a href="javascript:switchto('about');" id="nav_about">about</a></li>
             <li><a href="javascript:switchto('CV');" id="nav_CV">CV</a></li>
+            <li><a href="javascript:switchto('github');" id="nav_github">github</a></li>
         </ol>
     </div>
         
 	<div id="triangle">
-		<img src="images/bubble_triangle_100.png" width="30" height="15" />
+		<img src="images/black_bubble_triangle_100.png" width="30" height="15" />
 	</div>
 	
 	<div id="about" class="content_bubble">
@@ -62,6 +61,10 @@ function curl_get($url)
 		<h3>CV</h3>
 		<p><?=$general['CV']; ?></p>
 	</div>
+    <div id="github" class="content_bubble">
+    </div>
+    
+
 
 	
 	<div id="footer">
@@ -70,4 +73,14 @@ function curl_get($url)
 	<div id="spacer" style="padding-bottom: 12px; float: left; clear: both;">&nbsp;</div>
 
 </body>
+      
+	 <script  type="text/javascript"  src="http://code.jquery.com/jquery-1.5.1.js"></script>
+	<!-- Script for GitHub Badge Widget -->
+	<script src="http://www.chrismarsh.ca/test/js/jquery.github_badge.js"></script>
+
+    <script>
+            $("#github").GitHubBadge({
+                login: "chrismarsh"
+            });
+	</script>
 </html>

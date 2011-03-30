@@ -24,12 +24,12 @@ outline: none;
 body
 {
 	margin: 24px 8px 8px 8px;
-	background: #000000 url(../IMG_2710.JPG)
+	/*background: #000000 url(../IMG_2710.JPG)
 	center center fixed no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;	
+        background-size: cover;	*/
 			
 /**	background-attachment: fixed;
 	background-repeat: none;
@@ -44,6 +44,7 @@ div#header h1
 	font-size: 86px;
 	color: #000000;
 	font-family: HelveticaNeueCondensedBold;
+	opacity: 0.7;
 }
 div#header
 {
@@ -131,7 +132,7 @@ div#triangle
 	width: 700px;
 	margin: 0px 28px 24px 0;
 	padding: 32px 24px 21px 24px;
-	border: none;
+	border: solid;
 	
 
 	font-family: 'HelveticaNeueRegular';
@@ -172,6 +173,10 @@ div#about
 div#CV
 {
 	display: none;	
+}
+div#github
+{
+	display:none;
 }
 div#triangle
 {

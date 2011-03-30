@@ -16,7 +16,11 @@ function switchto(elem)
 		}
 		else if (elem == 'CV')
 		{
-			triangle_margin = '10px 170px 0 0';
+			triangle_margin = '10px 160px 0 0';
+		}
+		else if (elem == 'github')
+		{
+			triangle_margin = '10px 270px 0 0';
 		}
 		else
 		{
@@ -35,6 +39,7 @@ function hideall()
 {
 		document.getElementById('about').style.display = 'none';
 		document.getElementById('CV').style.display = 'none';
+		document.getElementById('github').style.display = 'none';
 		document.getElementById('triangle').style.display = 'none';
 		document.getElementById('footer').style.display = 'none';
 
