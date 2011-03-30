@@ -4,14 +4,16 @@
 {
 	font-family: 'HelveticaNeueRegular';
 	src: url('../fonts/HelveticaNeue.eot');
-	src: local('Helvetica Neue Bold'), local('HelveticaNeue'), url('HelveticaNeue.woff') format('woff'), url('HelveticaNeue.ttf') format('truetype');
+	src: url('../fonts/HelveticaNeue.woff') format('woff');
+	src: url('../fonts/HelveticaNeue.ttf')  format('truetype');
 }
 
 @font-face
 {
 	font-family: 'HelveticaNeueCondensedBold';
 	src: url('../fonts/HelveticaNeue-CondensedBold.eot');
-	src: local('HelveticaNeue-CondensedBold'), local('HelveticaNeue-CondensedBold'), url('HelveticaNeue-CondensedBold.woff') format('woff'), url('HelveticaNeue-CondensedBold.ttf') format('truetype');
+	src: url('../fonts/HelveticaNeue-CondensedBold.woff') format('woff');
+	src: url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
 }
 
 /*get rid of the broken line boxes around clicked links*/
@@ -32,16 +34,16 @@ body
 /**	background-attachment: fixed;
 	background-repeat: none;
 	background-position: left top;**/
-	
-	font-family: 'HelveticaNeueRegular';
+	font-family: HelveticaNeueRegular;
 }
 
 /* The large name headr*/
 div#header h1
 {
 	margin: 0px 24px -20px 0;
-	font-size: 92px;
+	font-size: 86px;
 	color: #000000;
+	font-family: HelveticaNeueCondensedBold;
 }
 div#header
 {
@@ -49,7 +51,6 @@ div#header
 	font-size: 24px;
 /*	color: #FFFFFF;*/
 	color: #000000;
-	
 }
 
 /* The navigation elements*/
@@ -186,7 +187,7 @@ div#footer
 /*** FOOTER ***/
 div#footer
 {
-	float: right;
+	float: left;
 	clear: both;
 	margin: 48px 48px 0 0;
 	margin-bottom: 50px;

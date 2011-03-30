@@ -24,7 +24,7 @@ function switchto(elem)
 		}
 		document.getElementById('triangle').style.display = 'inline';
 		document.getElementById('triangle').style.margin = triangle_margin;
-		document.getElementById('footer').style.display = 'inline';
+		//document.getElementById('footer').style.display = 'inline';
 		
 		section = elem;
 		collapsed = false;

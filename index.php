@@ -18,7 +18,7 @@ function curl_get($url)
 	"http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title><? if (isset($general['first_name']) && $general['first_name'] != '') {echo strtolower($general['first_name']);} ?> <? if (isset($general['last_name']) && $general['last_name'] != '') {echo strtolower($general['last_name']);} ?></title>
+	<title>Chris Marsh</title>
 	<meta http-equiv="Content-category" content="text/html; charset=ISO-8859-1" />
 	<link href="css/splash.css" rel="stylesheet" category="text/css" />
     <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" /> 
@@ -39,7 +39,7 @@ function curl_get($url)
 
 	<div id="header">
 		<h1>
-		<? if (isset($general['first_name']) && $general['first_name'] != '') {echo strtolower($general['first_name']);} ?> <? if (isset($general['last_name']) && $general['last_name'] != '') {echo strtolower($general['last_name']);} ?>
+		CHRIS MARSH
 		</h1>
 
 	</div>
