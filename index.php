@@ -11,25 +11,68 @@
 	<link rel="stylesheet" href="js/jquery.github_badge.css?v=1" />
     
     	<script type="text/javascript" src="js/switches.js"></script>
-        
-      
-
-
-    
 	<script type="text/javascript">
 		var collapsed = true;
 		var section ="";
 	</script>
 
-	<style>
-            #sample_user_badge
-			{
-                float: left;
-                margin: 50px;
-                width: 350px;
-				display:inline;
+<!-- All credit to http://stackoverflow.com/questions/262740/javascript-onhover-event/263194#263194 -->
+	<script type="text/javascript">
+    
+    var HoverListener = {
+        addElem: function( elem, callback, delay )
+        {
+            if ( delay === undefined )
+            {
+                    delay = 1000;
             }
-        </style>
+            var hoverTimer;
+            addEvent( elem, 'mouseover', function()
+            {
+                    hoverTimer = setTimeout( callback, delay );
+            } );
+            addEvent( elem, 'mouseout', function()
+            {
+                    clearTimeout( hoverTimer );
+            } );
+        }
+    }
+    /*needed as the script executes if directly called */
+    function about()
+    {
+       switchto("about");
+    }
+    function cv()
+    {
+       switchto("CV");
+    }
+    function github()
+    {
+       switchto("github");
+    }
+    
+    //  Generic event abstractor
+    function addEvent( obj, evt, fn )
+    {
+        if ( typeof obj.addEventListener != undefined )
+        {
+            obj.addEventListener( evt, fn, false );
+        }
+        else if ( typeof obj.attachEvent != undefined )
+        {
+            obj.attachEvent( "on" + evt, fn );
+        }
+    }
+    
+    addEvent( window, 'load', function()
+    {
+       HoverListener.addElem( document.getElementById( 'nav_about' ), about, 200 );
+       HoverListener.addElem( document.getElementById( 'nav_CV' ), cv, 200 );
+       HoverListener.addElem( document.getElementById( 'nav_github' ), github, 200 );
+    } );
+    
+    </script>
+
 </head>
 
 <body>
@@ -50,7 +93,7 @@
     </div>
         
 	<div id="triangle">
-		<img src="images/black_bubble_triangle_100.png" width="30" height="15" />
+		<img src="images/bubble_triangle_100.png" width="30" height="15" />
 	</div>
 	
 	<div id="about" class="content_bubble">
@@ -79,8 +122,11 @@
 	<script src="http://www.chrismarsh.ca/test/js/jquery.github_badge.js"></script>
 
     <script>
-            $("#github").GitHubBadge({
-                login: "chrismarsh"
+          $("#github").GitHubBadge({
+			login: "chrismarsh",
+			sorting: "ascending", // ascending or descending for repos (user badge) and issues (project badge)
+			theme: "github", // adds value as class for entire badge
+			animate_style: "slide" //slideDown or show
             });
 	</script>
 </html>
