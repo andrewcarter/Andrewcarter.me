@@ -11,11 +11,39 @@
 	<link rel="stylesheet" href="js/jquery.github_badge.css?v=1" />
     
     	<script type="text/javascript" src="js/switches.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        
 	<script type="text/javascript">
 		var collapsed = true;
 		var section ="";
 	</script>
 
+	<script type="text/javascript">
+			var flashvars = {d: "IzMEb42tv1i*fh8C9hZsMQ"};
+			var params = {
+				movie: "https://acrobat.com/Clients/current/ADCMainEmbed.swf",
+				quality: "high",
+				wmode: "transparent",
+				bgcolor: "#202020",
+				allowScriptAccess: "sameDomain",
+				allowFullScreen: "true"
+				
+				};
+			var attributes = {
+				movie: "https://acrobat.com/Clients/current/ADCMainEmbed.swf",
+				quality: "high",
+				wmode: "transparent",
+				bgcolor: "#202020",
+				allowScriptAccess: "sameDomain",
+				allowFullScreen: "true",
+				loop: "false",
+				align: "middle"
+				
+				};
+			attributes.id = "CV";
+			swfobject.embedSWF("https://acrobat.com/Clients/current/ADCMainEmbed.swf", "CV_content", "680", "1000", "9.0.0", false, flashvars, params, attributes);
+			
+		</script>
 
 
 </head>
@@ -41,12 +69,20 @@
 	
 	<div id="about" class="content_bubble">
 		<h3>about</h3>
-		<p><?=$general['about_me']; ?></p>
+            <p>I am currently a masters student in Physical Geography at the <a href="http://www.usask.ca/">University of Saskatchewan</a> in Saskatchewan, Canada 
+            working with <a href="http://www.usask.ca/geography/faculty/pomeroy/index.htm">John Pomeroy</a> and  <a href="http://www.cs.usask.ca/~spiteri/">Raymond Spiteri</a>. I have an interest in hydrological modelling and related fieldwork.
+            I  have  a B.Sc. in Physical Geography Honours with Computer science and Math minors.                   
+            </p>
 	</div>
 	<div id="CV" class="content_bubble">
-		<h3>CV</h3>
-		<p><?=$general['CV']; ?></p>
-	</div>
+    	<div id="CV_content">
+            <p><a href="2011-marsh-CV.pdf">If you don't have Flash installed, or wish to download the PDF file, click here.</a></p>
+
+			<!--<iframe src="http://docs.google.com/viewer?url=chrismarsh.ca%2Ftest%2F2011-marsh-CV.pdf&embedded=true" width="700" height="500" style="border: none;"></iframe> -->
+            <!--<object data="2011-marsh-CV.pdf?#zoom=75&scrollbar=1&toolbar=0&navpanes=0" type="application/pdf" width="100%" height="100%"> -->
+		</div>
+    </div>
+    
     <div id="github" class="content_bubble">
     </div>
     

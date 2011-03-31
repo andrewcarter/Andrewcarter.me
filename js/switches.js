@@ -16,11 +16,11 @@ function switchto(elem)
 		}
 		else if (elem == 'CV')
 		{
-			triangle_margin = '10px 160px 0 0';
+			triangle_margin = '10px 175px 0 0';
 		}
 		else if (elem == 'github')
 		{
-			triangle_margin = '10px 270px 0 0';
+			triangle_margin = '10px 296px 0 0';
 		}
 		else
 		{

@@ -9,23 +9,7 @@ $visual_style['navigation_shadows'] = true; // Add shadows to your name and the 
 /*** ABOUT ME ***/
 $general['first_name'] = 'Chris'; // Just your first name
 $general['last_name'] = 'Marsh'; // Just your last name
-$general['about_me'] = 
-"I am currently a masters student in Physical Geography at the <a href=\"http://www.usask.ca/\">University of Saskatchewan</a> in Saskatchewan, Canada. I have an interest in Earth systems  modelling and related fieldwork.
-
-
-
-
-
-  Honours BSc. with:</p>
-
-  <p>Physical Geography - Major<br />
-
-    Computer Science - Minor<br />
-
-    Mathematics - Minor</p>
-
-"
-;
+$general['about_me'] = '';
 $general['CV']='test cv';
 
 /*** TWITTER 
