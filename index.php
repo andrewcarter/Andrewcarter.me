@@ -16,68 +16,11 @@
 		var section ="";
 	</script>
 
-<!-- All credit to http://stackoverflow.com/questions/262740/javascript-onhover-event/263194#263194 -->
-	<script type="text/javascript">
-    
-    var HoverListener = {
-        addElem: function( elem, callback, delay )
-        {
-            if ( delay === undefined )
-            {
-                    delay = 1000;
-            }
-            var hoverTimer;
-            addEvent( elem, 'mouseover', function()
-            {
-                    hoverTimer = setTimeout( callback, delay );
-            } );
-            addEvent( elem, 'mouseout', function()
-            {
-                    clearTimeout( hoverTimer );
-            } );
-        }
-    }
-    /*needed as the script executes if directly called */
-    function about()
-    {
-       switchto("about");
-    }
-    function cv()
-    {
-       switchto("CV");
-    }
-    function github()
-    {
-       switchto("github");
-    }
-    
-    //  Generic event abstractor
-    function addEvent( obj, evt, fn )
-    {
-        if ( typeof obj.addEventListener != undefined )
-        {
-            obj.addEventListener( evt, fn, false );
-        }
-        else if ( typeof obj.attachEvent != undefined )
-        {
-            obj.attachEvent( "on" + evt, fn );
-        }
-    }
-    
-    addEvent( window, 'load', function()
-    {
-       HoverListener.addElem( document.getElementById( 'nav_about' ), about, 200 );
-       HoverListener.addElem( document.getElementById( 'nav_CV' ), cv, 200 );
-       HoverListener.addElem( document.getElementById( 'nav_github' ), github, 200 );
-    } );
-    
-    </script>
+
 
 </head>
 
 <body>
-	<div id="sample_user_badge"></div>
-
 	<div id="header">
 		<h1>
 		CHRIS MARSH
@@ -108,8 +51,6 @@
     </div>
     
 
-
-	
 	<div id="footer">
 		Lifehacker.me by <a href="http://lifehacker.com">Lifehacker</a>.
 	</div>
