@@ -22,6 +22,10 @@ function switchto(elem)
 		{
 			triangle_margin = '10px 296px 0 0';
 		}
+		else if (elem == 'gallery')
+		{
+			triangle_margin = '10px 417px 0 0';
+		}
 		else
 		{
 			triangle_margin = '10px 54px 0 0';
@@ -40,6 +44,7 @@ function hideall()
 		document.getElementById('about').style.display = 'none';
 		document.getElementById('CV').style.display = 'none';
 		document.getElementById('github').style.display = 'none';
+		document.getElementById('gallery').style.display = 'none';
 		document.getElementById('triangle').style.display = 'none';
 		document.getElementById('footer').style.display = 'none';
 

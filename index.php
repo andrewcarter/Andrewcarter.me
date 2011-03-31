@@ -10,8 +10,9 @@
     <!-- CSS for GitHub Badge Widget: implied media="all" -->
 	<link rel="stylesheet" href="js/jquery.github_badge.css?v=1" />
     
-    	<script type="text/javascript" src="js/switches.js"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<script  type="text/javascript"  src="http://code.jquery.com/jquery-1.5.1.js"></script>
+	<script type="text/javascript" src="js/switches.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
         
 	<script type="text/javascript">
 		var collapsed = true;
@@ -44,7 +45,8 @@
 			swfobject.embedSWF("https://acrobat.com/Clients/current/ADCMainEmbed.swf", "CV_content", "680", "1000", "9.0.0", false, flashvars, params, attributes);
 			
 		</script>
-
+		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+		<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 
 </head>
 
@@ -60,6 +62,7 @@
             <li><a href="javascript:switchto('about');" id="nav_about">about</a></li>
             <li><a href="javascript:switchto('CV');" id="nav_CV">CV</a></li>
             <li><a href="javascript:switchto('github');" id="nav_github">github</a></li>
+            <li><a href="javascript:switchto('gallery');" id="nav_gallery">publications</a></li>
         </ol>
     </div>
         
@@ -87,14 +90,32 @@
     </div>
     
 
+    <div id="gallery"  class="content_bubble">
+    <p><a href="http://docs.google.com/viewer?url=chrismarsh.ca%2Ftest%2F2011-marsh-CV.pdf&embedded=true?iframe=true&width=100%&height=100%" rel="prettyPhoto[iframes]">CV</a></p>
+   <p><a href="http://docs.google.com/viewer?url=chrismarsh.ca%2Ftest%2FTR-2009-02.pdf&embedded=true?iframe=true&width=100%&height=100%" rel="prettyPhoto[iframes]">Marsh, C.B., Spiteri R.J., Davison B. Improved MESH efficiency via parallelization and code optimization. University of Saskatchewan Technical report 2009-02</a></p>
+     
+    	<p><a href="http://docs.google.com/viewer?url=chrismarsh.ca%2Ftest%2Fmarsh_ip3_poster.pdf&embedded=true?iframe=true&width=100%&height=100%" rel="prettyPhoto[iframes]">Marsh C.B., Spiteri R.J., Davison B. Improved MESH efficiency via parallelization and code optimization. Poster session presented at: IP3/WC2N Annual conference; 2009 Oct14-17; Lake Louise, Alberta, Canada</a></p>
+   <p> <a href="http://docs.google.com/viewer?url=chrismarsh.ca%2Ftest%2FMarsh_2007_IUGG.pdf&embedded=true?iframe=true&width=100%&height=100%" rel="prettyPhoto[iframes]">Marsh C.B., Pohl S., Liston G.E. Impact of increased shrub density on snow accumulation and melt in the Arctic tundra. Poster session presented at: IUGG; 2007; Perugia, Italy</a></p>
+
+
+    </div>
+
+
 	<div id="footer">
 		Lifehacker.me by <a href="http://lifehacker.com">Lifehacker</a>.
 	</div>
 	<div id="spacer" style="padding-bottom: 12px; float: left; clear: both;">&nbsp;</div>
 
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+	</script>
+
+
 </body>
       
-	 <script  type="text/javascript"  src="http://code.jquery.com/jquery-1.5.1.js"></script>
+
 	<!-- Script for GitHub Badge Widget -->
 	<script src="http://www.chrismarsh.ca/test/js/jquery.github_badge.js"></script>
 

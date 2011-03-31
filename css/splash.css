@@ -173,25 +173,9 @@ div#triangle
 }
 
 /* CONTENT DISPLAY */
-div#about
+div#about, div#CV, div#github,div#triangle,div#gallery,div#footer
 {
 	display: none;
-}
-div#CV
-{
-	display: none;	
-}
-div#github
-{
-	display:none;
-}
-div#triangle
-{
-	display: none;	
-}
-div#footer
-{
-	display: none;	
 }
 
 
