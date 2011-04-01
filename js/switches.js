@@ -32,7 +32,6 @@ function switchto(elem)
 		}
 		document.getElementById('triangle').style.display = 'inline';
 		document.getElementById('triangle').style.margin = triangle_margin;
-		//document.getElementById('footer').style.display = 'inline';
 		
 		section = elem;
 		collapsed = false;
@@ -46,6 +45,5 @@ function hideall()
 		document.getElementById('github').style.display = 'none';
 		document.getElementById('gallery').style.display = 'none';
 		document.getElementById('triangle').style.display = 'none';
-		document.getElementById('footer').style.display = 'none';
 
 }

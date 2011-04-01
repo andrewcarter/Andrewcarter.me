@@ -83,7 +83,7 @@ div#elements li
 	
 	border-radius: 6px;
 	background: #000000;
-	background: -webkit-gradient(linear, 80% 20%, 80% 100%, from(#000000), to(#555555));
+	/*background: -webkit-gradient(linear, 80% 20%, 80% 100%, from(#000000), to(#555555));*/
 	padding: 3px 6px 3px 6px;
 
 
@@ -156,12 +156,20 @@ div#triangle
 .content_bubble h3
 {
 	font-weight: bold;
-	font-size: 36px;
+	font-size: 26px;
 	margin: 2px 0 -10px 0;
+	font-family: 'HelveticaNeueCondensedBold';
 }
 .content_bubble a
 {
 	color: #444;
+	text-decoration: none;
+	font-family: 'HelveticaNeueRegular';
+	font-weight: normal;
+}
+.content_bubble h4
+{
+		color: #444;
 	text-decoration: none;
 	font-family: 'HelveticaNeueRegular';
 	font-weight: normal;
@@ -192,7 +200,7 @@ div#footer
 	-webkit-border-radius: 18px;
 	border-radius: 18px;
 	background: #000000;
-	background: -webkit-gradient(linear, 80% 20%, 80% 100%, from(#000000), to(#555555));
+	/*background: -webkit-gradient(linear, 80% 20%, 80% 100%, from(#000000), to(#555555));*/
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
