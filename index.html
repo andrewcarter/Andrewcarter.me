@@ -4,7 +4,7 @@
 <head>
 	<title>Chris Marsh</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="Chris Marsh" content="dreamLogic" />
+    <meta name="Chris Marsh" />
 	<meta name="Chris Marsh Saskatoon Saskatchewan" content=" " />
 	<link href="css/splash.css" rel="stylesheet"/>
     <!-- CSS for GitHub Badge Widget: implied media="all" -->
@@ -33,6 +33,10 @@
       })();
 
     </script>
+    <script src="js/jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+    $.backstretch("IMG_2710.JPG");
+</script>
 </head>
 
 <body>
@@ -77,7 +81,7 @@
 			<p></p>
             <h3>This Site </h3>
             <p>
-            This site is based upon a (very) heavily modified templated called <a href="http://lifehacker.com/#!5636983/how-to-make-and-host-your-own-custom-personal-landing-page">lifehacker.me</a>. In my github repository you can find my fork of the project. This site works best with any of the modern browsers (Firefox 3.6+, Safari 4+, IE9+, Chrome) and may have rendering problems on older browsers. The google doc inline viewer can have problems if 3rd party cookies are diabled. If you are having trouble viewing a document, please just download it and view in any PDF viewer.
+            This site is based upon a (very) heavily modified templated called <a href="http://lifehacker.com/#!5636983/how-to-make-and-host-your-own-custom-personal-landing-page">lifehacker.me</a>. In my github repository you can find my fork of the project. This site works best with any of the modern browsers (Firefox 3.6+, Safari 3+, IE9+, Chrome) and may have rendering problems on older browsers. The google doc inline viewer can have problems if 3rd party cookies are diabled. If you are having trouble viewing a document, please just download it and view in any PDF viewer.
             </p>
 	</div>
 
@@ -89,6 +93,7 @@
     </div>
 
     <div id="github" class="content_bubble">
+    <div id="git"></div>
     </div>
 
 
@@ -135,14 +140,16 @@
 
 
 	<!-- Script for GitHub Badge Widget -->
-	<script src="http://www.chrismarsh.ca/test/js/jquery.github_badge.js"></script>
-
-    <script>
-          $("#github").GitHubBadge({
-			login: "chrismarsh",
-			sorting: "ascending", // ascending or descending for repos (user badge) and issues (project badge)
-			theme: "github", // adds value as class for entire badge
-			animate_style: "slide" //slideDown or show
+	<script src="js/jquery.github_badge.js"></script>
+    <script type="text/javascript">
+        $("#git").GitHubBadge({
+		login: "chrismarsh",
+		sorting: "ascending", // ascending or descending for repos (user badge) and issues (project badge)
+        theme: "github", // adds value as class for entire badge
+        include_github_logo: true, // show a lil love
+        image_path: "images/",  // path to your images directory
+        animate_style: "slide" //slideDown or show
             });
 	</script>
+
 </html>
