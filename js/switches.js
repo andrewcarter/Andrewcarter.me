@@ -10,21 +10,21 @@ function switchto(elem)
 	{
 		hideall();
 		document.getElementById(elem).style.display = 'inline';
-		if (elem == 'about')
+		if (elem == 'publications')
 		{
-			triangle_margin = '10px 54px 0 0';
-		}
-		else if (elem == 'CV')
-		{
-			triangle_margin = '10px 175px 0 0';
+			triangle_margin = '10px 75px 0 0';
 		}
 		else if (elem == 'github')
 		{
-			triangle_margin = '10px 296px 0 0';
+			triangle_margin = '10px 220px 0 0';
 		}
-		else if (elem == 'gallery')
+		else if (elem == 'CV')
 		{
-			triangle_margin = '10px 417px 0 0';
+			triangle_margin = '10px 330px 0 0';
+		}
+		else if (elem == 'about')
+		{
+			triangle_margin = '10px 440px 0 0';
 		}
 		else
 		{
@@ -43,7 +43,7 @@ function hideall()
 		document.getElementById('about').style.display = 'none';
 		document.getElementById('CV').style.display = 'none';
 		document.getElementById('github').style.display = 'none';
-		document.getElementById('gallery').style.display = 'none';
+		document.getElementById('publications').style.display = 'none';
 		document.getElementById('triangle').style.display = 'none';
 
 }

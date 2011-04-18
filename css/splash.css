@@ -198,7 +198,7 @@ div#triangle
 }
 
 /* CONTENT DISPLAY */
-div#about, div#CV, div#github,div#triangle,div#gallery,div#footer
+div#about, div#CV, div#github,div#triangle,div#publications,div#footer
 {
 	display: none;
 }
