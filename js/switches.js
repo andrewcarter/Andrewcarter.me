@@ -10,15 +10,19 @@ function switchto(elem)
 	{
 		hideall();
 		document.getElementById(elem).style.display = 'inline';
-		if (elem == 'publications')
+		if (elem == 'projects')
 		{
 			triangle_margin = '10px 75px 0 0';
+		}
+		else if (elem == 'skills')
+		{
+			triangle_margin = '10px 42px 0 0';
 		}
 		else if (elem == 'github')
 		{
 			triangle_margin = '10px 220px 0 0';
 		}
-		else if (elem == 'CV')
+		else if (elem == 'resume')
 		{
 			triangle_margin = '10px 330px 0 0';
 		}
@@ -32,6 +36,7 @@ function switchto(elem)
 		}
 		document.getElementById('triangle').style.display = 'inline';
 		document.getElementById('triangle').style.margin = triangle_margin;
+		document.getElementById('footer').style.display = 'inline';
 		
 		section = elem;
 		collapsed = false;
@@ -41,9 +46,10 @@ function switchto(elem)
 function hideall()
 {
 		document.getElementById('about').style.display = 'none';
-		document.getElementById('CV').style.display = 'none';
+		document.getElementById('resume').style.display = 'none';
 		document.getElementById('github').style.display = 'none';
-		document.getElementById('publications').style.display = 'none';
+		document.getElementById('projects').style.display = 'none';
+		document.getElementById('skills').style.display = 'none';
 		document.getElementById('triangle').style.display = 'none';
-
+		document.getElementById('footer').style.display = 'none';
 }

@@ -198,7 +198,35 @@ div#triangle
 }
 
 /* CONTENT DISPLAY */
-div#about, div#CV, div#github,div#triangle,div#publications,div#footer
+div#about, div#resume, div#github,div#triangle,div#projects,div#skills
 {
 	display: none;
+}
+
+/*** FOOTER ***/
+div#footer
+{
+	float: right;
+	clear: right;
+	margin: 0px 28px 0 0;
+	margin-bottom: 50px;
+	padding: 16px;
+	-moz-border-radius: 18px;
+	-webkit-border-radius: 18px;
+	border-radius: 18px;
+	background: #000000;
+	background: -webkit-gradient(linear, 80% 20%, 80% 100%, from(#000000), to(#555555));
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	opacity: 0.8;
+}
+div#footer a
+{
+	color: #C5E8FF;
+	text-decoration: none;
+}
+div#footer a:hover
+{
+	text-decoration: underline;
 }
