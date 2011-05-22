@@ -29,7 +29,6 @@
 }
 
 
-
 a {
 outline: none;
 }
@@ -83,7 +82,7 @@ div#elements
 	font-size: 16px;
 /*	color: #FFFFFF;*/
 	color: #000000;
-	margin-right: 20px;
+	margin-right: 28px;
 
 }
 div#elements li
@@ -197,12 +196,6 @@ div#triangle
 	text-decoration: underline;
 }
 
-/* CONTENT DISPLAY */
-div#about, div#resume, div#github,div#triangle,div#projects,div#skills
-{
-	display: none;
-}
-
 /*** FOOTER ***/
 div#footer
 {
@@ -220,6 +213,7 @@ div#footer
 	font-size: 12px;
 	font-weight: bold;
 	opacity: 0.8;
+	display:none;
 }
 div#footer a
 {
@@ -229,4 +223,10 @@ div#footer a
 div#footer a:hover
 {
 	text-decoration: underline;
+}
+
+/* CONTENT DISPLAY */
+div#about, div#resume, div#github,div#triangle,div#projects,div#skills
+{
+	display: none;
 }
