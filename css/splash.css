@@ -6,11 +6,11 @@
 
 @font-face {
     font-family: 'HelveticaNeueRegular';
-    src: url('/fonts/helveticaneue-webfont.eot');
-    src: url('/fonts/helveticaneue-webfont.eot?iefix') format('eot'),
-         url('/fonts/helveticaneue-webfont.woff') format('woff'),
-         url('/fonts/helveticaneue-webfont.ttf') format('truetype'),
-         url('/fonts/helveticaneue-webfont.svg#webfont1veKQbMO') format('svg');
+    src: url('../fonts/helveticaneue-webfont.eot');
+    src: url('../fonts/helveticaneue-webfont.eot?iefix') format('eot'),
+         url('../fonts/helveticaneue-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-webfont.svg#webfont1veKQbMO') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -18,16 +18,15 @@
 
 @font-face {
     font-family: 'HelveticaNeueCondensedBold';
-    src: url('/fonts/helveticaneue-condensedbold-webfont.eot');
-    src: url('/fonts/helveticaneue-condensedbold-webfont.eot?iefix') format('eot'),
-         url('/fonts/helveticaneue-condensedbold-webfont.woff') format('woff'),
-         url('/fonts/helveticaneue-condensedbold-webfont.ttf') format('truetype'),
-         url('/fonts/helveticaneue-condensedbold-webfont.svg#webfont5yluDChI') format('svg');
+    src: url('../fonts/helveticaneue-condensedbold-webfont.eot');
+    src: url('../fonts/helveticaneue-condensedbold-webfont.eot?iefix') format('eot'),
+         url('../fonts/helveticaneue-condensedbold-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-condensedbold-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-condensedbold-webfont.svg#webfont5yluDChI') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
-
 
 a {
 outline: none;
@@ -56,17 +55,17 @@ body
   text-align: right;
 }
 
-
 /* The large name header*/
 div#header h1
 {
-	margin: 0px 24px -20px 0;
+	margin: 0px 28px -20px 0;
 	font-size: 86px;
 	color: #000000;
 	font-family: HelveticaNeueCondensedBold;
 	opacity: 0.7;
 	/*filter: alpha(opacity=70);*/
 }
+
 div#header
 {
 	text-align: right;
@@ -82,9 +81,10 @@ div#elements
 	font-size: 16px;
 /*	color: #FFFFFF;*/
 	color: #000000;
-	margin-right: 28px;
+	margin-right: 4px;
 
 }
+
 div#elements li
 {
 	opacity:0.3;
@@ -103,8 +103,6 @@ div#elements li
 	
 	background: #000000;
 	padding: 3px 6px 3px 6px;
-	
-
 }
 
 div#elements li:hover
@@ -124,11 +122,13 @@ div#elements a
 	color: #FFFFFF;
 	
 }
+
 div#elements a:visited
 {
 	text-decoration: none;
 	color: #FFFFFF;
 }
+
 div#elements a:hover
 {
 	text-decoration: none;
@@ -148,6 +148,7 @@ div#triangle
 	-o-transition: All 0.3034s ease;
 	
 }
+
 .content_bubble
 {
 	float: right;
@@ -168,6 +169,7 @@ div#triangle
 	background: #fff;
 	text-align: left;
 }
+
 .content_bubble h3
 {
 	font-weight: bold;
@@ -175,6 +177,7 @@ div#triangle
 	margin: 2px 0 -10px 0;
 	font-family: 'HelveticaNeueCondensedBold';
 }
+
 .content_bubble a
 {
 	color: #444;
@@ -182,6 +185,7 @@ div#triangle
 	font-family: 'HelveticaNeueRegular';
 	font-weight: normal;
 }
+
 .content_bubble h4
 {
 		color: #444;
@@ -194,6 +198,17 @@ div#triangle
 {
 	color: #444;
 	text-decoration: underline;
+}
+
+.tag-cloud{
+text-align: center;
+}
+
+.tag-cloud span{
+text-decoration: underline;
+display: inline-block;
+display: -moz-inline-block;
+padding: 0px 5px;
 }
 
 /*** FOOTER ***/
@@ -215,11 +230,13 @@ div#footer
 	opacity: 0.8;
 	display:none;
 }
+
 div#footer a
 {
 	color: #C5E8FF;
 	text-decoration: none;
 }
+
 div#footer a:hover
 {
 	text-decoration: underline;

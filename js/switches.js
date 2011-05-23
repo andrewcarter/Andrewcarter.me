@@ -12,23 +12,23 @@ function switchto(elem)
 		document.getElementById(elem).style.display = 'inline';
 		if (elem == 'projects')
 		{
-			triangle_margin = '10px 75px 0 0';
+			triangle_margin = '10px 55px 0 0';
 		}
 		else if (elem == 'skills')
 		{
-			triangle_margin = '10px 42px 0 0';
+			triangle_margin = '10px 183px 0 0';
 		}
 		else if (elem == 'github')
 		{
-			triangle_margin = '10px 220px 0 0';
+			triangle_margin = '10px 300px 0 0';
 		}
 		else if (elem == 'resume')
 		{
-			triangle_margin = '10px 330px 0 0';
+			triangle_margin = '10px 424px 0 0';
 		}
 		else if (elem == 'about')
 		{
-			triangle_margin = '10px 440px 0 0';
+			triangle_margin = '10px 550px 0 0';
 		}
 		else
 		{
